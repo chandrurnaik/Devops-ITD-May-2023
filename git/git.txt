@@ -1,13 +1,15 @@
 
 Remote Repository:
   - A remote repository is a Git repository hosted on a remote server or a code hosting platform like GitHub, GitLab, or Bitbucket.
-  - It acts as a centralized location for collaborating changes from multiple developers, where multiple developers can push and pull     changes to keep the repository in sync.
+  - It acts as a centralized location for collaborating changes from multiple developers, where multiple developers can push and pull     
+    changes to keep the repository in sync.
   - We can not do any changes directly to remote repository and a valid user with proper access can push changes to remote repo from only local repo.
 
 Local Repository:
   - A local repository is a copy of a Git repository that resides on your local machine.
   - It contains the complete copy of the repo repository, including all branches, commits, and files etc.
-  - The local repository allows you to make changes, commit them, switch between branches, and perform Git operations without needing a live network connection to remote repo.
+  - The local repository allows you to make changes, commit them, switch between branches, and perform Git operations without needing a live 
+    network connection to remote repo.
   - You can create a local repository by initializing a new repository with git init or cloning an existing repository using git clone.
   
   #To get a local repo / to download / clone a remote repo 
@@ -56,7 +58,8 @@ git pull
 
 git merge vs rebase 
 
-Both git merge and rebase are used to combines the changes from one branch into another branch but different approaches to integrating changes from one branch into another in Git
+Both git merge and rebase are used to combines the changes from one branch into another branch but different approaches to integrating changes from 
+one branch into another in Git
 
 merge 
    - Merge creates a new commit which shows the changes combined from both branches. 
@@ -77,7 +80,8 @@ git fetch and git pull are both used to update local repository changes from rem
 git fetch 
   - Brings the changes from a remote repository into your local repository.
   - Does not automatically merge the changes into your current branch in local repository.
-  - Instead it keeps changes in a temporary branch called FETCH_HEAD and we can inspect the changes then decide how you want to integrate       them into our local work in local repository.
+  - Instead it keeps changes in a temporary branch called FETCH_HEAD and we can inspect the changes then decide how you want to integrate       
+    them into our local work in local repository.
 
 git pull
   - git pull, combines the functionality of git fetch and git merge in a single step.
@@ -97,8 +101,10 @@ git cherry-pick
           git cherry-pick <source_branch_commit>
   
 git stash 
-  - The git stash command is used to save the current state of your working directory and index, which is a temporary area where you can        store changes that you're not ready to commit yet. 
-  - This is useful for when you need to switch to a different branch or work on a different task, but you don't want to lose the changes        you've made so far and dont want to commit it yet.
+  - The git stash command is used to save the current state of your working directory and index, which is a temporary area where you can        
+    store changes that you're not ready to commit yet. 
+  - This is useful for when you need to switch to a different branch or work on a different task, but you don't want to lose the changes       
+    you've made so far and dont want to commit it yet.
   
   # To stash the current un-commited changes 
         git stash 
