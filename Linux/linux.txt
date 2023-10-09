@@ -51,7 +51,8 @@ rename or move the file from one location to another (mv)
 	
 Delete files/directories (rm)
 
-Use the rm command to delete files and directories. But rm cannot simply delete a directory. Use “rm -r” to delete a directory. In this case, it deletes both the folder and the files in it.
+Use the rm command to delete files and directories. But rm cannot simply delete a directory. Use “rm -r” to delete a directory. 
+In this case, it deletes both the folder and the files in it.
      To remove/delete a file 	
 	rm file_name 
      To remove/delete a Directory	
@@ -129,7 +130,8 @@ of the given input. By default, it prints the first 10 lines of the specified fi
 		tail -n 5 file.txt (or) tail -5 file.txt 
 
 find
-	find command can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, name, creation date, modification date, owner and permissions. By using the ‘-exec’ other commands can be executed on files or folders found.
+	find command can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, 
+        name, creation date, modification date, owner and permissions. By using the ‘-exec’ other commands can be executed on files or folders found.
 	
 SYNTAX: find <location_to_find> [options]
 
@@ -178,7 +180,8 @@ matching a specified pattern and print the matching lines to standard output.
 	grep -v -e "pattern" -e "pattern"
 	
 sed
-SED command in UNIX is stands for stream editor and it can perform lots of function on file like, searching, find and replace, insertion or deletion. 
+SED command in UNIX is stands for stream editor and it can perform lots of function on file like, searching, find and replace, 
+insertion or deletion. 
 
 Consider the following text file as the input file for all cases below. (file.txt)
 
@@ -214,7 +217,8 @@ unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
 	sed -n '2p' file.txt
 
 CUT
-The cut command in UNIX is a command for cutting out the sections column with using delimiter from each line of files and writing the result to standard output.
+The cut command in UNIX is a command for cutting out the sections column with using delimiter from each line 
+of files and writing the result to standard output.
 	cut -d "delimiter" -f (field number) file.txt
 1) To cut the data with “ “ (space) as delimiter and print first column data
 	cut -d " " -f 1 state.txt
@@ -223,7 +227,8 @@ The cut command in UNIX is a command for cutting out the sections column with us
 
 awk
 
-The awk command in UNIX is a command for cutting out the sections column with using field separator from each line of files and writing the result to standard output.
+The awk command in UNIX is a command for cutting out the sections column with using field separator from each line of files 
+and writing the result to standard output.
 
 Consider the following text file as the input file for all cases below.
 $cat > employee.txt
@@ -275,7 +280,10 @@ dirname
 	
 
 Crontab (Job Scheduler)
-The crontab is a list of commands that you want to run on a regular schedule, and also the name of the command used to manage that list. Crontab stands for “cron table, ” because it uses the job scheduler cron to execute tasks; cron itself is named after “chronos, ” the Greek word for time.cron is the system process which will automatically perform tasks for you according to a set schedule. The schedule is called the crontab, which is also the name of the program used to edit that schedule.
+The crontab is a list of commands that you want to run on a regular schedule, and also the name of the command 
+used to manage that list. Crontab stands for “cron table, ” because it uses the job scheduler cron to execute tasks; 
+cron itself is named after “chronos, ” the Greek word for time.cron is the system process which will automatically perform 
+tasks for you according to a set schedule. The schedule is called the crontab, which is also the name of the program used to edit that schedule.
 
 Linux Crontab Format:	*	*	*	*	*	command to execute
 
@@ -351,7 +359,8 @@ ps command is used to display information about the processes that are running i
 1) To view current running processes.
 	ps -ef	
 kill
-Use kill command to terminate a process. First get the process id using ps -ef command, then use kill -9 to kill the running Linux process as shown below. 
+Use kill command to terminate a process. First get the process id using ps -ef command, then use kill -9 to kill 
+the running Linux process as shown below. 
 STEP1: Before kill first get the pid (process id to kill)
 	ps -ef | grep process_name
 	
@@ -376,9 +385,11 @@ fg
      		fg <job_number>
 
 nohup
-   - Most of the time your login into remote server via ssh. If you start a shell script or command and you exit (abort remote connection), 	 the process / command will get killed. 
-   - Sometime job or command takes a long time. If you are not sure when the job will finish, then it is better to leave job running in 	background. But, if you log out of the system, the job will be stopped and terminated by your shell.
-   - use nohup command which allows to run command/process or shell script that can continue running in the background after you log out 	from a shell:
+   - Most of the time your login into remote server via ssh. If you start a shell script or command and you exit 
+     (abort remote connection), the process / command will get killed. 
+   - Sometime job or command takes a long time. If you are not sure when the job will finish, then it is better to leave job running in 	
+     background. But, if you log out of the system, the job will be stopped and terminated by your shell.
+   - use nohup command which allows to run command/process or shell script that can continue running in the background after you log out from a shell:
 		nohup <command> &
 
 uname	
@@ -409,7 +420,8 @@ To display system’s username
 
 root
 - Root is the superuser account in Unix and Linux which is created automatically at the time of OS installation.
-- The root user has complete and unrestricted access to the system, including the ability to modify or delete any file or directory, and to start or stop any service.
+- The root user has complete and unrestricted access to the system, including the ability to modify or delete any 
+  file or directory, and to start or stop any service.
 - It is a user account for administrative purposes, and has the highest access rights on the system.
 - The default user ID of root user is 0 (Zero)
 
@@ -428,7 +440,8 @@ su command allows us to switch to a different user from current logged in user.
 	sudo su -
 
 echo 
-The echo command is a built-in command in most Unix-like operating systems, including Linux and macOS. It is used to display text to the standard output or console or in the terminal.
+The echo command is a built-in command in most Unix-like operating systems, including Linux and macOS. 
+It is used to display text to the standard output or console or in the terminal.
 	echo <text_line to display>
 	example: echo "My name is Manoj ......" 
 
@@ -482,14 +495,16 @@ Single quote ('') vs Double quote ("")
 
 	('') 
 		- Consideres all inside single quotes as String 
-		- The $var variable output does not get replaced with the variable value, but displays the variable name within the quotes, i.e., its literal form.
+		- The $var variable output does not get replaced with the variable value, but displays the variable name within the quotes, 
+                  i.e., its literal form.
 
 		>$  echo '$var'
 		output:	$var
 
 	("") 
 		- Looks for assigned values to variable and executes the content. 
-		- Running the echo command with double quotes expands the $var variable and outputs the assigned value instead of printing the characters within the quotes.
+		- Running the echo command with double quotes expands the $var variable and outputs the assigned value 
+                  instead of printing the characters within the quotes.
 
 		>$  echo "$var"
 		output:	10	
@@ -522,7 +537,9 @@ Copy the file from one location to another (cp)
 scp (Secure and Normal copy between servers)
 - Used copy files and directory between the machines and also we can use it to copy with in the linux machine like cp.
 - It uses the same authentication and security configurations as SSH command.
-- If the copy process using SCP is interrupted or terminated before completion, running SCP again will start the copy process from the beginning. SCP does not have the ability to resume the transfer or transfer only the remaining parts of the file. It performs a plain linear copy, either locally or over a network.
+- If the copy process using SCP is interrupted or terminated before completion, running SCP again will start the 
+  copy process from the beginning. SCP does not have the ability to resume the transfer or transfer only the remaining parts 
+  of the file. It performs a plain linear copy, either locally or over a network.
 - Encrypt data by default, Slower for large transfers and more secure.
 
 	1. From Local machine to Remote host/machine
@@ -549,8 +566,10 @@ scp (Secure and Normal copy between servers)
 			
 rsync (Compare and copy files)
 - Used copy files and directory between the machines and also we can use it to copy with in the linux machine like cp and scp.
-- rsync performs a more sophisticated comparison between the source and destination files. It checks not only the file sizes but also the modification timestamps and other attributes of the files.
-- If the copy process using rsync is interrupted or terminated before completion, running rsync again will start the copy process for remaining file as it compares the source and destinations files, Directories.
+- rsync performs a more sophisticated comparison between the source and destination files. It checks not only the file sizes 
+  but also the modification timestamps and other attributes of the files.
+- If the copy process using rsync is interrupted or terminated before completion, running rsync again will start the copy 
+  process for remaining file as it compares the source and destinations files, Directories.
 - Does not encrypt data by default, Faster for large transfers and less secure compared to scp
 			
 	FILE: rsync -e 'ssh -i aws.pem' <local_normal_path>  <username>@<ip_address>:<remote_file_path>
