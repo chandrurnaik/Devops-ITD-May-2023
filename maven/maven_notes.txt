@@ -11,7 +11,8 @@ Building a software project typically includes the following activities:
 
 Maven is a project management tool which can manage the complete building life cycle.
 
-Maven simplifies and standardizes the project build process. by handling compilation, testing, library dependency, distribution, documentation and team collaboration.
+Maven simplifies and standardizes the project build process. by handling compilation, testing, library dependency, distribution, 
+documentation and team collaboration.
 
 
 Maven build lifecycle 
@@ -76,7 +77,7 @@ Maven standard directory structure.
 	test - The test directory contains the test source code.
 		   java - The Java unit test code for the tests to test the source code (usually JUnit test).
 		   resources - The resources directory contains the resources needed by your project.
-	target - The target directory is created by Maven. It contains all the compiled classes, JAR files etc.			 (output builds) 	
+	target - The target directory is created by Maven. It contains all the compiled classes, JAR files etc.	(output builds) 	
 	   
 
 Maven Repository
@@ -90,8 +91,10 @@ Maven Repository
 		
 		2. Central Repository
 			- Maven central repository is repository managed by Maven community.
-			- Maven central repository contains a large number of commonly used libraries. And we can publish our own libraries to Maven central repository as well.
-			- When Maven cannot find any dependency jar file in your local repository, it starts searching 	  in Maven central repository using following URL: http://repo1.maven.org/maven2/.
+			- Maven central repository contains a large number of commonly used libraries. And we can publish our own libraries 
+                          to Maven central repository as well.
+			- When Maven cannot find any dependency jar file in your local repository, it starts searching in Maven central 
+                          repository using following URL: http://repo1.maven.org/maven2/.
 
 		3. Remote Repository
 			- Sometime we need to set up a Maven repository inside a company or a project development team to host our own libraries.
