@@ -5,21 +5,12 @@ Reliability: The measure of how consistently a system performs its intended func
 
 Scalability: The ability of a system to handle increasing workloads by adding resources or making changes to accommodate growth.
 
-
 Incident Management: The process of identifying, responding to, and resolving incidents that impact the availability or performance of a system.
-
-Error Budget: A concept in SRE that quantifies the acceptable amount of downtime or errors within a specified timeframe. It helps balance reliability 
-and innovation.
 
 Monitoring: The practice of observing and measuring the behavior and performance of a system to detect anomalies, troubleshoot issues, 
 and ensure proper functioning.
 
 Alerting: The mechanism by which SRE teams are notified when a system exceeds predefined thresholds or encounters critical issues.
-
-Capacity Planning: The process of determining the resources and infrastructure required to support current and future workloads to maintain system performance and reliability.
-
-Change Management: The practice of controlling and tracking changes to a system, including software deployments, infrastructure modifications, 
-and configuration updates, to minimize risks and ensure stability.
 
 Incident Response: The coordinated effort to address and resolve incidents promptly, minimize their impact, and restore normal system operations.
 
@@ -61,9 +52,6 @@ them quickly while minimizing customer impact.
 
 Blameless Post-Mortem: After an incident, SRE teams conduct blameless post-mortems to analyze what went wrong, why it happened, and how to prevent 
 it in the future. The goal is to focus on learning and improvement rather than assigning blame.
-
-Error Budget Policy: An error budget policy defines how error budgets are managed and spent. It outlines the trade-offs between feature development 
-and reliability improvements based on the current state of the error budget.
 
 Capacity Planning: Capacity planning involves forecasting resource requirements for a service to ensure it can handle expected load and traffic. 
 SREs work on capacity planning to avoid outages due to resource constraints.
@@ -111,63 +99,64 @@ The Site Reliability Engineering (SRE) process is a set of principles and practi
 software systems and services. While the specific implementation may vary from one organization to another, here is a general overview of the SRE process:
 
 Service Definition:
-
 Define the scope and boundaries of the service.
 Identify service-level objectives (SLOs) that specify the desired level of reliability and performance.
-Error Budget Policy:
 
+Error Budget Policy:
 Establish an error budget policy that outlines how much downtime or error rate is acceptable for the service within a given timeframe.
 This policy guides decision-making regarding feature development versus reliability improvements.
-Monitoring and Alerting:
 
+Monitoring and Alerting:
 Set up monitoring to collect data on various aspects of the service, including latency, error rates, and resource utilization.
 Create alerts based on service-level indicators (SLIs) to detect anomalies and incidents.
-Incident Response:
 
+Incident Response:
 When an incident occurs, SREs respond quickly to minimize customer impact.
 Follow documented incident response procedures, including escalation paths and communication protocols.
 Aim to resolve the incident as quickly as possible.
-Blameless Post-Mortems:
 
+Blameless Post-Mortems:
 After an incident is resolved, conduct a blameless post-mortem to analyze what went wrong and why.
 Focus on identifying root causes and systemic issues rather than assigning blame.
 Document action items to prevent similar incidents in the future.
-Automation:
 
+Automation:
 Automate repetitive and manual operational tasks (toil) to reduce the workload on SREs.
 Use automation for provisioning, configuration management, and incident response.
-Capacity Planning:
 
+Capacity Planning:
 Continuously monitor resource utilization and plan for capacity scaling as needed to accommodate traffic growth.
 Avoid resource constraints that could lead to outages.
-Change Management:
+**The process of determining the resources and infrastructure required to support current and future workloads 
+to maintain system performance and reliability.**
 
+Change Management:
 Implement a robust change management process for deploying new features or changes to the service.
 Conduct code reviews, testing, and canary deployments to minimize the risk of introducing errors.
-Load Testing and Chaos Engineering:
 
+Load Testing and Chaos Engineering:
 Perform load testing to understand how the service behaves under different levels of load.
 Conduct chaos engineering experiments to proactively identify weaknesses in the system's resilience.
-Documentation:
 
+Documentation:
 Maintain thorough documentation of the service architecture, procedures, and operational runbooks.
 Ensure documentation is kept up-to-date.
-On-Call Rotation:
 
+On-Call Rotation:
 Establish an on-call rotation where SREs take turns being responsible for responding to incidents outside of regular working hours.
 Provide proper training and support for on-call engineers.
-Continuous Improvement:
 
+Continuous Improvement:
 Use the insights gained from post-mortems and monitoring data to drive continuous improvement.
 Prioritize reliability work based on the error budget policy and customer impact.
-Communication and Collaboration:
 
+Communication and Collaboration:
 Foster a culture of collaboration between development and operations teams.
 Maintain open lines of communication to ensure everyone is aligned on reliability goals.
+
 Security:
-
 Incorporate security practices into the SRE process to ensure the service is resilient to security threats and vulnerabilities.
-Measuring and Reporting:
 
+Measuring and Reporting:
 Regularly measure and report on SLO attainment and error budget consumption.
 Use these metrics to make data-driven decisions about where to invest in reliability improvements.
