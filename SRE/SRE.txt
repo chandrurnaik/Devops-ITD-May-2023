@@ -22,8 +22,6 @@ Performance Optimization: The process of identifying and addressing performance 
 
 Disaster Recovery: The set of procedures and measures to recover and restore a system in the event of a major outage, natural disaster, or catastrophic failure.
 
-High Availability (HA): A design principle that aims to minimize system downtime by implementing redundancy, fault tolerance, and failover mechanisms.
-
 Load Balancing: The distribution of incoming network traffic across multiple servers or resources to optimize resource utilization and ensure high availability.
 
 DevOps: A software development methodology that emphasizes collaboration and integration between development and operations teams to improve the efficiency 
