@@ -16,8 +16,6 @@ Incident Response: The coordinated effort to address and resolve incidents promp
 
 Post-Incident Analysis: The review and analysis of incidents to identify root causes, recommend preventive measures, and improve system reliability.
 
-Automation: The use of tools and scripts to automate manual and repetitive tasks, reducing human error and improving efficiency.
-
 Performance Optimization: The process of identifying and addressing performance bottlenecks and inefficiencies to enhance the speed and responsiveness of a system.
 
 Disaster Recovery: The set of procedures and measures to recover and restore a system in the event of a major outage, natural disaster, or catastrophic failure.
@@ -47,18 +45,6 @@ SRE aims to reduce toil through automation and other means to free up engineers 
 
 Incident: An incident is an unplanned event or outage that affects the reliability of a service. SREs respond to incidents and work to resolve 
 them quickly while minimizing customer impact.
-
-Blameless Post-Mortem: After an incident, SRE teams conduct blameless post-mortems to analyze what went wrong, why it happened, and how to prevent 
-it in the future. The goal is to focus on learning and improvement rather than assigning blame.
-
-Capacity Planning: Capacity planning involves forecasting resource requirements for a service to ensure it can handle expected load and traffic. 
-SREs work on capacity planning to avoid outages due to resource constraints.
-
-Automation: Automation is a key principle in SRE. It involves using scripts, tools, and systems to automate repetitive tasks, making operations 
-more efficient and reducing the risk of human error.
-
-Monitoring and Alerting: SREs use monitoring tools to collect data on system performance and set up alerts to notify them of potential issues. 
-Effective monitoring and alerting are critical for identifying and responding to incidents.
 
 Service Dependency Graph: A service dependency graph is a visual representation of how different services or components in a system depend 
 on each other. It helps SREs understand the complex relationships within a system and identify potential points of failure.
@@ -107,6 +93,8 @@ This policy guides decision-making regarding feature development versus reliabil
 Monitoring and Alerting:
 Set up monitoring to collect data on various aspects of the service, including latency, error rates, and resource utilization.
 Create alerts based on service-level indicators (SLIs) to detect anomalies and incidents.
+Monitoring and Alerting: SREs use monitoring tools to collect data on system performance and set up alerts to notify them of potential issues. 
+Effective monitoring and alerting are critical for identifying and responding to incidents.
 
 Incident Response:
 When an incident occurs, SREs respond quickly to minimize customer impact.
@@ -117,10 +105,15 @@ Blameless Post-Mortems:
 After an incident is resolved, conduct a blameless post-mortem to analyze what went wrong and why.
 Focus on identifying root causes and systemic issues rather than assigning blame.
 Document action items to prevent similar incidents in the future.
+Blameless Post-Mortem: After an incident, SRE teams conduct blameless post-mortems to analyze what went wrong, why it happened, and how to prevent 
+it in the future. The goal is to focus on learning and improvement rather than assigning blame.
 
 Automation:
 Automate repetitive and manual operational tasks (toil) to reduce the workload on SREs.
 Use automation for provisioning, configuration management, and incident response.
+Automation: The use of tools and scripts to automate manual and repetitive tasks, reducing human error and improving efficiency.
+Automation: Automation is a key principle in SRE. It involves using scripts, tools, and systems to automate repetitive tasks, making operations 
+more efficient and reducing the risk of human error.
 
 Capacity Planning:
 Continuously monitor resource utilization and plan for capacity scaling as needed to accommodate traffic growth.
